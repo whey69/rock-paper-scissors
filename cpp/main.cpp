@@ -117,6 +117,7 @@ int main()
 			window.draw(triangle); 
 		}
 
+		// this section is some of the worst one ive written yet
 		sf::VertexArray infosqr(sf::TrianglesStrip, 4); 
 		infosqr[0].position = sf::Vector2f(0, 620); 
 		infosqr[1].position = sf::Vector2f(427, 620); 
@@ -148,12 +149,12 @@ int main()
 
 		sf::Text text;
 		text.setFont(font);
-		text.setString("rock: " + std::to_string(left[0]));
+		text.setString("rocks: " + std::to_string(left[0]));
 		text.setCharacterSize(72);
 		text.setFillColor(sf::Color::Black);
 		text.setPosition(0, 620);
 		window.draw(text);
-		text.setString("paper: " + std::to_string(left[1]));
+		text.setString("papers: " + std::to_string(left[1]));
 		text.setPosition(427, 620);
 		window.draw(text);
 		text.setString("scissors: " + std::to_string(left[2]));
